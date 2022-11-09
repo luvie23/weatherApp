@@ -11,7 +11,7 @@ let temperatureDOM = document.getElementById('temperature');
 
 let leftBoard = document.getElementById('leftBoard');
 
-function getGif(){
+function getWeather(){
     // const response = await fetch('http://api.weatherstack.com/current?access_key=80a89d202f4cbfc3daa8e17233f2e1d2&query=makati', {mode: 'cors'});
     // const gifData = await response.json();
     // console.log(gifData);
@@ -27,7 +27,7 @@ function getGif(){
     cloudsDOM.textContent = 'Partly cloudy';
     temperatureDOM.textContent = `32°C`
 
-    setBackground(200);
+    setBackground(113);
 
     }
 
@@ -57,5 +57,5 @@ function setBackground(code){
 }
 
 
-getGif();
+getWeather();
 

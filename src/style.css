@@ -11,7 +11,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: linear-gradient(320deg, #AE2012,#BB3E03,#EE9B00);
+
     margin: 0;
     border: 0;
 }
@@ -21,7 +21,8 @@ body{
     align-items: center;
     justify-content: center;
     height: 60vh;
-    width: 80vw;
+    width: 60vw;
+    
 }
 
 #leftBoard{
@@ -30,14 +31,16 @@ body{
     align-items: center;
     justify-content: center;
     height: 60vh;
-    width: 50vw;
-    background-color: rgb(20,20,20, .8);
+    width: 45vw;
+    background-color: rgb(22, 22, 2, .5);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 #location{
     font-weight: bolder;
     font-size: 2rem;
-    color: aliceblue;
+    color: #F1ECD7;
 }
 
 #weather{
@@ -50,9 +53,31 @@ body{
 }
 
 #rightBoard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 60vh;
-    width: 30vw;
-    background-color: rgb(20,20,20, .5);
-    border: 1px solid black;
+    width: 15vw;
+    background-image: linear-gradient(320deg, #F7B242,#F43166,#F56561);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    
+}
+#rightBoard>p{
+    margin: 0;
+}
+
+#search{
+    margin-bottom: 0;
+    background-color: rgb(22, 22, 2, .3);
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#searchButton{
+    margin-top: 10px;
 }
 
