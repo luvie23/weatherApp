@@ -15,7 +15,6 @@ body{
 
 #content{
     display: flex;
-
     align-items: center;
     justify-content: center;
     height: 60vh;
@@ -25,12 +24,13 @@ body{
 #leftBoard{
     height: 60vh;
     width: 50vw;
-    background-color: white;
+    background-color: rgb(20,20,20, .5);
 }
 
 #rightBoard{
     height: 60vh;
     width: 30vw;
     background-color: rgb(20,20,20, .5);
+    border: 1px solid black;
 }
 
