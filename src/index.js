@@ -1,15 +1,17 @@
 import './style.css';
 
+
+
+
 let cityDOM = document.getElementById('city');
 let dateDOM = document.getElementById('date');
 let cloudsDOM = document.getElementById('clouds');
 let temperatureDOM = document.getElementById('temperature');
 
-let cloudImg = document.getElementById('cloudImg');
 
 let leftBoard = document.getElementById('leftBoard');
 
-async function getGif(){
+function getGif(){
     // const response = await fetch('http://api.weatherstack.com/current?access_key=80a89d202f4cbfc3daa8e17233f2e1d2&query=makati', {mode: 'cors'});
     // const gifData = await response.json();
     // console.log(gifData);
@@ -20,20 +22,19 @@ async function getGif(){
     // temperatureDOM.textContent = `${gifData.current.temperature}°C`
 
     cityDOM.textContent = 'Makati';
-    dateDOM.textContent = '2022-11-09 15:23';
-    cloudImg.src = '../src/imgs/clouds.png';
+    dateDOM.textContent = '2022-11-09 Local Time 15:23';
+
     cloudsDOM.textContent = 'Partly cloudy';
     temperatureDOM.textContent = `32°C`
 
-    setBackground(116);
+    setBackground(200);
 
     }
 
-getGif();
 
-
-
+//change background based on the weather code, grouped by similarities
 function setBackground(code){
+    document.body.style.backgroundSize = '100% 100%'
     if (code == 113){
         document.body.style.backgroundImage = "url('../src/imgs/sunny.jpg')";
     }else if (code == 116 || code == 119){
@@ -56,30 +57,5 @@ function setBackground(code){
 }
 
 
+getGif();
 
-
-// 179	Patchy snow possible
-// 182	Patchy sleet possible
-// 185	Patchy freezing drizzle possible
-// 227	Blowing snow
-// 260	Freezing fog
-// 281	Freezing drizzle
-// 284	Heavy freezing drizzle
-// 311	Light freezing rain
-
-
-
-// 200	Thundery outbreaks possible
-
-// 230	Blizzard
-
-
-
-// 299	Moderate rain at times
-// 302	Moderate rain
-// 305	Heavy rain at times
-// 308	Heavy rain
-
-
-
-// 80a89d202f4cbfc3daa8e17233f2e1d2
