@@ -10,7 +10,7 @@ let temperatureDOM = document.getElementById('temperature');
 
 
 async function getWeather(city){
-    const response = await fetch(`https://api.weatherstack.com/current?access_key=80a89d202f4cbfc3daa8e17233f2e1d2&query=${city}`, {mode: 'cors'});
+    const response = await fetch(`http://api.weatherstack.com/current?access_key=80a89d202f4cbfc3daa8e17233f2e1d2&query=${city}`, {mode: 'cors'});
     const weatherData = await response.json();
     console.log(weatherData);
     countryDOM.textContent = weatherData.location.country;
