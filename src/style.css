@@ -1,0 +1,36 @@
+html{
+    font-size: 14px;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(320deg, #AE2012,#BB3E03,#EE9B00);
+    margin: 0;
+    border: 0;
+}
+
+#content{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 80vw;
+}
+
+#leftBoard{
+    height: 60vh;
+    width: 50vw;
+    background-color: white;
+}
+
+#rightBoard{
+    height: 60vh;
+    width: 30vw;
+    background-color: rgb(20,20,20, .5);
+}
+
