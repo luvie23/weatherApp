@@ -39,9 +39,18 @@ body{
 }
 
 #location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-weight: bolder;
     font-size: 2rem;
-    color: #F1ECD7;
+    color: #F8F8F7;
+}
+
+#location>p{
+    margin: 0;
+    border: 0;
 }
 
 #weather{
@@ -79,6 +88,7 @@ body{
     border: 0;
     border-radius: 5px;
     height: 30px;
+    width: 13vw;
 }
 
 #searchButton{
@@ -86,3 +96,29 @@ body{
     
 }
 
+
+
+
+@media only screen and (max-width: 600px) {
+    #content{
+        flex-direction: column;
+    }
+
+    #leftBoard{
+        width: 80vw;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    
+    #rightBoard{
+        width: 80vw;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+
+  }

@@ -22,7 +22,7 @@ function getWeather(){
     // temperatureDOM.textContent = `${gifData.current.temperature}°C`
 
     cityDOM.textContent = 'Makati';
-    dateDOM.textContent = '2022-11-09 Local Time 15:23';
+    dateDOM.textContent = '2022-11-09 | 15:23';
 
     cloudsDOM.textContent = 'Partly cloudy';
     temperatureDOM.textContent = `32°C`
