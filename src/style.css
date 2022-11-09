@@ -48,6 +48,10 @@ body{
     color: #F8F8F7;
 }
 
+#country{
+    font-size: 3rem;
+}
+
 #location>p{
     margin: 0;
     border: 0;
