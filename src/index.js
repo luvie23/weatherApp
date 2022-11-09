@@ -27,34 +27,10 @@ function getWeather(){
     cloudsDOM.textContent = 'Partly cloudy';
     temperatureDOM.textContent = `32°C`
 
-    setBackground(113);
-
+  
     }
 
 
-//change background based on the weather code, grouped by similarities
-function setBackground(code){
-    document.body.style.backgroundSize = '100% 100%'
-    if (code == 113){
-        document.body.style.backgroundImage = "url('../src/imgs/sunny.jpg')";
-    }else if (code == 116 || code == 119){
-        document.body.style.backgroundImage = "url('../src/imgs/cloudy.jpg')";
-    }else if (code == 122){
-        document.body.style.backgroundImage = "url('../src/imgs/overcast.jpg')";
-    }else if (code == 143 || code == 248){
-        document.body.style.backgroundImage = "url('../src/imgs/mist.jpg')";
-    }else if (code == 176 || code == 263 || code == 266 || code == 293 || code == 296){
-        document.body.style.backgroundImage = "url('../src/imgs/lightrain.jpg')";
-    }else if (code == 299 || code == 302 || code == 305 || code == 308){
-        document.body.style.backgroundImage = "url('../src/imgs/heavyrain.jpg')";
-    }else if (code == 200){
-        document.body.style.backgroundImage = "url('../src/imgs/thundery.jpg')";
-    }else if (code == 230){
-        document.body.style.backgroundImage = "url('../src/imgs/blizzard.jpg')";
-    }else{
-        document.body.style.backgroundImage = "url('../src/imgs/snow.jpg')";
-    }
-}
 
 
 getWeather();
